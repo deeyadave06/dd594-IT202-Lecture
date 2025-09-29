@@ -1,9 +1,10 @@
 POST http://localhost:3000/addcategory.test.php
 Content-Type: application/x-www-form-urlencoded
 
-categoryID=200
-&categoryCode=ELE
-&categoryName=Electric
+categoryID=300
+&categoryCode=BASS
+&categoryName=Bass
+
 ###
 GET http://localhost:3000/listcategories.test.php
 ###
@@ -12,7 +13,7 @@ Content-Type: application/x-www-form-urlencoded
 
 categoryID=200
 &categoryCode=GTR
-&categoryName=Guitars
+&categoryName=Guitar
 ###
 POST http://localhost:3000/removecategory.test.php
 Content-Type: application/x-www-form-urlencoded
