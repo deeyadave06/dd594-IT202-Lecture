@@ -2,6 +2,7 @@
 session_start();
 require_once("category.php");
 require_once("item.php");
+require_once("config.php");
 ?>
 <!DOCTYPE html>
 <html>
