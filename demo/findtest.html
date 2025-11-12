@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Finding an Element</title> 
+        <script> 
+            function changeit() { 
+            var answer = prompt("Enter some new text"); 
+            var spot = document.getElementById("here"); 
+            spot.innerHTML = answer; 
+            } 
+        </script> 
+    </head> 
+    <body> 
+        <h1>Trying to find an element</h1> 
+        <button type="button" onclick="changeit()">Click to change</button> 
+        <p id="here">This is the original text</p> 
+    </body> 
+</html>
