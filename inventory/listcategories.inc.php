@@ -1,3 +1,12 @@
+<script>
+    function selectFirstCategory() {
+        const select = document.querySelector('select[name="categoryID"]');
+        if (select && select.options.length > 0) {
+            select.selectedIndex = 0;
+        }
+    }
+    selectFirstCategory();
+</script>
 <script language="javascript">
    function listbox_dblclick() {
        document.categories.displaycategory.click()

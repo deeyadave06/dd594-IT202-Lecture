@@ -1,3 +1,12 @@
+<script>
+    function selectFirstItem() {
+        const select = document.querySelector('select[name="itemID"]');
+        if (select && select.options.length > 0) {
+            select.selectedIndex = 0;
+        }
+    }
+    selectFirstItem();
+</script>
 <?php
 require_once("item.php");
 $items = Item::getItems();
