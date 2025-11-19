@@ -2,12 +2,14 @@
 <html>
 <head>
     <title>XML test</title>
+    <p>Deeya Dave, IT-202-003, Internet Applications, Unit 12 In-Class Exercise, dd594@njit.edu, 11/19/2025</p>
     <script>
         function getcars() {
             var carlist = document.getElementById("carlist");
             carlist.innerHTML = "";
             var URL = "xmltest.php";
             var request = new XMLHttpRequest();
+            console.log(URL);
             request.open("GET", "xmltest.php", true);
             request.onreadystatechange = function () {
                 if (request.readyState == 4 && request.status == 200) {
