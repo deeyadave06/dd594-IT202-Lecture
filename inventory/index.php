@@ -22,6 +22,7 @@ require_once("config.php");
            <?php include("nav.inc.php"); ?>
        </nav>
        <main>
+        <?php if (isset($_SESSION['login'])) { ?>
         <aside>
            <?php include("aside.inc.php"); ?>
            <script>
@@ -29,6 +30,7 @@ require_once("config.php");
                setInterval(getRealTime, 5000);
            </script>
        </aside>
+       <?php } ?>
            <?php
            if (isset($_REQUEST['content'])) {
                include($_REQUEST['content'] . ".inc.php");
