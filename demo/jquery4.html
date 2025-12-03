@@ -2,6 +2,7 @@
 <html> 
 <head> 
 <title>Changing Properties with jQuery</title> 
+<p>Deeya Dave, IT-202-003, Internet Applications, Unit 13 In-Class Exercise, dd594@njit.edu, 12/3/2025</p>
 </head> 
 <style> 
     div { 
@@ -15,13 +16,22 @@
             $("p").css("background-color", "red"); 
             $("p").css("font-size", "50px"); 
         }); 
-    }); 
+    });
+    jQuery(document).ready(function() { 
+        $("#secButton").click(function() { 
+            $("h1").css("background-color", "blue"); 
+            $("h1").css("font-size", "25px"); 
+            $("h1").css("font-family", "Arial");
+        }); 
+    });
+
 </script> 
 <body> 
     <div id="container"> 
         <h1>This is my heading</h1> 
         <p>This is some content on my web page</p> 
         <button>Test button</button> 
+        <button id="secButton">Second Button</button>
     </div> 
 </body> 
 </html>
